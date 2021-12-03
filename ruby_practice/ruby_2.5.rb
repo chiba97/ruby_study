@@ -46,14 +46,13 @@ end
 point = 7
 day = 1
 if day == 1
-  point *= 5
+  puts point *= 5
 end
-puts point
 # ↓
 point = 7
 day = 1
-point *= 5 if day == 1
-puts point
+puts point *= 5 if day == 1
+
 
 # ifとelsifの後ろにthenを入れることも可能（使用頻度は高くない）
 country = "itary"
