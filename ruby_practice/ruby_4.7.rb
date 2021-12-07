@@ -136,3 +136,24 @@ puts 'Ruby,Java,Python'.split(',')
 # ブロックパラメーターには要素の添字が渡されている
 a = Array.new(10) { |n| n + 1 }
 puts a
+
+a = Array.new(5) { 'default' }
+str = a[0]
+str.upcase!
+puts a
+
+# []や<<を使った文字列の操作
+a = 'abcde'
+# 3文字目を取得
+a[2]
+# ２文字目から３文字分を取得
+a = 'abcdefg'
+a[1, 3]
+# 最後の１文字を取得
+a[-1]
+# xに置き換える
+a[0] = 'x'
+# ２文字目から３文字分をYで置き換える
+a[1, 3] = 'Y'
+# 末尾にPQRを追加
+a << 'PQR'
