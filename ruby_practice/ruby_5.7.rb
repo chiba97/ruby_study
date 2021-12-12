@@ -37,16 +37,16 @@ def show_currency(country)
   currency&.upcase
 end
 puts show_currency(:japan)
-p show_currency(nil)
+# p show_currency(nil)
 
 # nilガード(nillかfalseが入っている時に値を代入する)
 limit = nil
 limit ||= 10
-puts limit
+# puts limit
 
 limit = 20
 limit ||= 10
-puts limit
+# puts limit
 
 limit = nil
 limit ||= begin
@@ -54,4 +54,4 @@ limit ||= begin
   b = 20
   a + b 
 end
-puts limit
+# puts limit
