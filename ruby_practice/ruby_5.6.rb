@@ -1,6 +1,6 @@
 currencies = { japan: 'yen', us: 'dollar', india: 'rupee'}
-p currencies.keys
-p currencies.values
+# p currencies.keys
+# p currencies.values
 
 # **を使いハッシュを展開させる
 h = { us: 'dollar', indeia: 'rupee' }
@@ -13,26 +13,26 @@ p i
 # 任意のキーワードを受け付ける**引数
 # 想定外のキーワードはothers引数で受け取る
 def buy_burger(menu, drink: true, potato: true, **other)
-  p other
+  # p other
 end
 buy_burger('fish', salad: true, chiken: false)
 
 # 最後の引数にハッシュがくれば省略できる
 def buy_burger(menu, options = {})
-  puts options
+  # puts options
 end
 buy_burger('fish', 'drink' => true, 'potato' => false)
 
 # ハッシュから配列にする
 currencies = { japan: 'yen', us: 'dollar', india: 'rupee' }
-p currencies.to_a
+# p currencies.to_a
 # 配列からハッシュ
 array = [[:japan, 'yen'], [:us, 'dollar'], [:india, 'rupee']]
 p array.to_h
 
 # Hashを使用する方法
 array = [[:japan, 'yen'], [:us, 'dollar'], [:india, 'rupee']]
-p Hash[array]
+# p Hash[array]
 
 # ハッシュのデフォルト値
 h = Hash.new('hello')
