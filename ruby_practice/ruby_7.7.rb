@@ -1,0 +1,2 @@
+# publicメソッド
+# initializeメソッド以外のインスタンスメソッドはデフォルトでpublicメソッド
