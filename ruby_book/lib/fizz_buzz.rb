@@ -1,4 +1,5 @@
 def fizz_buzz(n)
+  binding.irb
   if n % 15 == 0
     "FizzBuzz"
   elsif n % 3 == 0
