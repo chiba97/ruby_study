@@ -127,7 +127,7 @@
 # "3:カツ丼"
 # array =["牛丼","豚丼","カツ丼"]
 # array.each_with_index  do |a,i|
-#   #ここに処理を記載 
+#   #ここに処理を記載
 #   puts "#{i + 1}：#{a}"
 # end
 
@@ -152,3 +152,113 @@
 # prices = { "ほうれん草" => 150, "じゃがいも" => 190, "牛肉" => 200,"ねぎ"=> 100}
 # n = prices.select { |key, value| value > 180 }
 # p n
+
+
+# 1に囲まれている0を正規表現で探す
+# def solution(n)
+#     list = n.to_s(2).scan(/1(0+)(?=1)/).flatten.map(&:length)
+#     puts list.empty? ? 0 : list.max
+# end
+# solution(529)
+
+# aの配列の要素ははk回右にずれる
+# def solution(a, k)
+#     a.rotate(-k)
+# end
+# b = [3, 4, 5]
+# p solution(b, 4)
+
+# 配列の重複の値を挿入する
+# def solution(a)
+#     a.inject(:^)
+# end
+# a = [9, 3, 9, 3, 9, 7, 9]
+# p solution(a)
+
+# x地点からy地点までの移動回数（一回移動するごとにd移動）
+# def solution(x, y, d)
+#     ((y-x)/(d.to_f)).ceil
+# end
+# p solution(10, 85, 30)
+# 16 21
+# def solution(a)
+#     (1..(a.length + 1)).sum - a.sum
+# end
+# a = [1, 2, 3, 4, 6]
+# p solution(a)
+
+# def solution(a)
+#   a.sort == Array(1..a.length) ? 1 : 0
+# end
+# a = [1, 2, 4]
+# b = [1, 2, 3, 4]
+# p solution(a)
+# p solution(b)
+
+# def solution(a)
+#   east = 0
+#   west = 0
+#   a.each do |n|
+#     if n == 0
+#       east += 1
+#     elsif n == 1
+#       west += 1
+#     end
+#   end
+#   puts east + west
+# end
+# a = [1, 0, 1, 0, 0]
+# solution(a)
+
+# def solution(a)
+#   p a.uniq.size
+# end
+
+# a = [2, 1, 1, 2, 3, 1]
+# b = [1, 2, 3]
+# solution(a)
+# solution(b)
+
+# def solution(a)
+#   p a.sort.last(3).inject(:*)
+# end
+# a = [-3, 1, 2, -2, 5, 6]
+# b = [-7, -5, 3, -2, 5, 6]
+# solution(a)
+# solution(b)
+
+# def solution(a)
+#   a.sort!
+#   max_three = a[-3..-1].inject(:*)
+#   min_two_max = a[0] * a[1] * a[-1]
+#   p [max_three, min_two_max].max
+# end
+# a = [-3, 1, 2, -2, 5, 6]
+# b = [-7, -5, 3, -2, 5, 6]
+# solution(a)
+# solution(b)
+
+# def solution(a)
+#   a.select { |v| v > 0 }.sort.each_cons(3).each do |p, q, r|
+#     if p + q > r then
+#       return 1
+#     end
+#   end
+#   return 0
+# end
+# ab = [10, 2, 5, 1, 8, 20]
+# ba = [10, 50, 5, 1]
+# puts solution(ab)
+# puts solution(ba)
+
+# input = gets.to_i
+
+# def point(input)
+# if input >= 1000
+#   (input * 1.1).floor - input
+# else
+#   0
+# end
+# end
+
+# puts point(input)
