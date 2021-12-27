@@ -5,7 +5,7 @@
 #   count = 1
 #   while count <= num
 #     divisible_or = num % count
-#     if divisible_or == 0
+#     if divisible_or == 0 && count <= range
 #       divisible << count
 #       if count <= range
 #         divisible_range << count
@@ -13,15 +13,29 @@
 #     end
 #     count += 1
 #   end
-#   puts "約数の総和は#{divisible.sum}です"
-#   puts "#{range}以下の約数の和は#{divisible_range.sum}です"
+#   puts "約数の総和は#{divisible.sum}"
+#   puts "#{range}以下の約数の和は#{divisible_range.sum}"
 # end
 
-# puts "約数の総和を出したい整数を入力してください"
+# puts "約数の総和を出したい整数を入力"
 # num = gets.to_i
-# puts "和を出したい約数の範囲を指定してください"
+# puts "和を出したい約数の範囲を指定"
 # range = gets.to_i
 # divisor(num, range)
+
+# 約数オリジナル
+# def divisor(num, range)
+#   divisible_range = []
+#   count = 1
+#   while count <= num
+#     divisible_or = num % count
+#     if divisible_or == 0 && count <= range
+#       divisible_range << count
+#     end
+#     count += 1
+#   end
+#   puts divisible_range.sum
+# end
 
 
 
