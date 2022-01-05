@@ -262,3 +262,32 @@
 # end
 
 # puts point(input)
+
+# n = gets.to_i
+# a = gets.split(" ").map(&:to_i)
+# puts a
+
+# n = gets.to_i
+# a = Array.new(n)
+# n.times { |i| a[i] = gets.split(" ") }
+# a.each do |m|
+#   name = m[0]
+#   age  = m[1].to_i
+#   puts name + " " + (age + 1).to_s
+# end
+
+# n = gets.to_i
+# n.times { puts gets.chomp.length}
+
+# s = gets
+# ss = gets
+# if ss.include?(s)
+#     puts "YES"
+# else
+#     puts "NO"
+# end
+
+# n = gets
+# a = n[0].to_i + n[3].to_i
+# b = n[1].to_i + n[2].to_i
+# puts a.to_s + b.to_s
