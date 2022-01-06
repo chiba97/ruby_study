@@ -365,3 +365,145 @@
 #     s[0], s[1] = s[1], s[0]
 #     puts s.join(" ")
 # end
+
+# n = gets.to_i
+
+# properties = {}
+# n.times do
+#   s, a = gets.split(' ')
+#   properties[s] = a.to_i
+# end
+
+# s = gets
+# puts properties[s]
+
+# n = gets.to_i
+# a = Array.new(n)
+# n.times { |i| a[i] = gets.split(" ") }
+# j = gets.chomp
+# n.times do |i|
+#     if a[i][0] == j
+#         puts a[i][1]
+#         break
+#     end
+# end
+
+# n = gets.to_i
+# damage = {}
+# n.times do
+#     name = gets.chomp
+#     damage[name] = 0
+# end
+
+# s = gets.to_i
+# s.times do
+#     name, attack = gets.split(" ")
+#     damage[name] += attack.to_i
+# end
+
+# z = gets.chomp
+# puts damage[z]
+
+# n = gets.to_i
+# damage = {}
+
+# n.times do
+#     name = gets.chomp
+#     damage[name] = 0
+# end
+
+# s = gets.to_i
+# s.times do
+#     name, attack = gets.split(" ")
+#     damage[name] += attack.to_i
+# end
+# da = damage.sort
+# da.each do |key, value|
+#     puts value
+# end
+
+# n, m, l = gets.split(' ').map(&:to_i)
+
+# group_a = {}
+# n.times do
+#   num, req = gets.split(' ').map(&:to_i)
+#   group_a[num] = req
+# end
+
+# group_b = {}
+# m.times do
+#   num, req = gets.split(' ').map(&:to_i)
+#   group_b[num] = req
+# end
+
+# group_c = {}
+# n.times { |i| group_c[i + 1] = group_b[group_a[i + 1]] }
+
+# group_c.each do |val|
+#   puts val.join(' ')
+# end
+
+# n = 10000
+# loop do
+#     break if n % 13 == 0
+#     n += 1
+# end
+
+# puts n
+
+# num = gets.to_i
+# a, b = gets.split(" ").map(&:to_i)
+# paiza, kyoko = 1, 1
+# count = 0
+
+# loop do
+#     kyoko += paiza * a
+#     count += 1
+    
+#     break if kyoko > num
+    
+#     paiza += kyoko % b
+# end
+
+# puts count
+
+# num = gets.chomp.to_i
+
+# (1..num).each do |i|
+#   output = gets.chomp.to_i
+#   puts output
+# end
+
+# n = gets.to_i
+# z = 0
+# n.times do 
+#     num = gets.to_i
+#     z + num if num >= 5
+# end
+# puts z
+
+# n = gets.to_i
+# a = Array.new(n)
+# count = 0
+
+# n.times { |i| a[i] = gets.split(" ") }
+
+# n.times do |i|
+#     if a[i][0] == a[i][1]
+#         count += a[i][0].to_i * a[i][1].to_i
+#     else
+#         count += a[i][0].to_i + a[i][1].to_i
+#     end
+# end
+
+# puts count
+
+# nums = gets.chomp.split
+# str  = gets.chomp
+# a = []
+
+# ((nums[0].to_i - 1)..(nums[1].to_i - 1)).each do |i|
+#     a << str[i]
+# end
+# strs = a.join("")
+# puts strs
