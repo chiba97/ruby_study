@@ -291,3 +291,77 @@
 # a = n[0].to_i + n[3].to_i
 # b = n[1].to_i + n[2].to_i
 # puts a.to_s + b.to_s
+
+# n = gets.to_i
+
+# basket = Array.new(n)
+# # basket = [nil, nil, nil]
+# n.times { |i| basket[i] = gets.split(' ').map(&:to_i) }
+# # baseket = [[1, 3], [2, 3], [4, 5]]
+# p basket
+
+# basket.sort!
+# p basket
+# # basket.each do |fruits|
+# #   puts fruits.join(' ')
+# # end
+# basket.reverse!
+# p basket
+# puts basket
+
+# n = gets.to_i
+# a = Array.new(n)
+
+# n.times { |i| a[i] = gets.split(" ").map(&:to_i) }
+
+# a.sort!.reverse!
+# a.each do |f|
+#     puts f.join(" ")
+# end
+
+
+# n = gets.to_i
+# a = Array.new(n)
+# flag = false
+
+# n.times { |i| a[i] = gets.to_i }
+# a.each do |n|
+#     if n == 7
+#         flag = true
+#         break
+#     end
+# end
+
+# if flag
+#     puts "YES"
+# else
+#     puts "NO"
+# end
+
+# n = gets.to_i
+# a = Array.new(n)
+# n.times { |i| a[i] = gets.to_i }
+
+# k = gets.to_i
+
+# n.times do |i|
+#     if a[i] == k
+#         puts i + 1
+#         break
+#     end
+# end
+
+# n = gets.to_i
+# a = Array.new(n)
+# n.times { |i| a[i] = gets.split(" ").map(&:to_i) }
+
+# n.times do |i|
+#     a[i][0], a[i][1] = a[i][1], a[i][0]
+# end
+
+# a.sort!.reverse!
+
+# a.each do |s|
+#     s[0], s[1] = s[1], s[0]
+#     puts s.join(" ")
+# end
