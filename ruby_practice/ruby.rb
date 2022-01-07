@@ -507,3 +507,30 @@
 # end
 # strs = a.join("")
 # puts strs
+
+# n = gets.to_i
+# a = Array.new(n)
+
+# # 配列の中に与えられた整数の数だけ金と銀を要素に持った配列を入れる
+# n.times { |i| a[i] = gets.split.map(&:to_i) }
+# # 銀の多い方を順に降順に並び替えするため、金と銀の要素を入れ替える
+# a.each { |e| e[0], e[1] = e[1], e[0] }
+
+# # 配列の要素を破壊的メソッドで降順に変更
+# a.sort!.reverse!
+
+# # 金と銀の要素を元に戻すために入れ替え、要素をスペースで繋げて出力
+# a.each do |e|
+#     e[0], e[1] = e[1], e[0]
+#     puts e.join(" ")
+# end
+
+
+# # 配列の各要素を変数にそれぞれ代入
+# n, m, k = gets.chomp.split.map(&:to_i)
+# a       = Array.new(n)
+
+# # 入力された数字がkと等しい時のみtrueとなり配列に代入
+# n.times { |i| a[i] = gets.split.select { |num| num.to_i == k} }
+# # kと等しい数字のみが入った配列の長さを数えて出力
+# a.each  { |e| puts e.length }
